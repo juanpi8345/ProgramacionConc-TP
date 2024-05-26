@@ -30,24 +30,29 @@ public class TestAlgoritmos implements Runnable {
 		//Declaro una variable para concatenar en cada Sysout.
 		String posiciones = "";
 		//Hago un for para no repetir codigo y poder ejecutar 4 casos de uso
-		for(int i = 0; i<4; i++) {
+		for(int i = 0; i<5; i++) {
 			switch(i) {
-				//Primer caso de uso, un array con mil posiciones
-				case 0:
+			//Primer caso de uso, un array con cien posiciones
+			case 0:
+				tamanioArr = 100;
+				posiciones = "cien posiciones";
+				break;
+				//Segundo caso de uso, un array con mil posiciones
+				case 1:
 					tamanioArr = 1000;
 					posiciones = "mil posiciones";
 					break;
-				//Segundo caso de uso, un array con diez mil posiciones
-				case 1:
+				//Tercer caso de uso, un array con diez mil posiciones
+				case 2:
 					tamanioArr = 10000;
 					posiciones = "diez mil posiciones";
 					break;
-				//Tercer caso de uso, un array con cien mil posiciones
-				case 2:
+				//Cuarto caso de uso, un array con cien mil posiciones
+				case 3:
 					tamanioArr = 100000;
 					posiciones = "cien mil posiciones";
 					break;
-				//Cuarto caso de uso, un array con un millon de posiciones
+				//Quinto caso de uso, un array con un millon de posiciones
 				default:
 					tamanioArr = 1000000;
 					posiciones = "un millon posiciones";
