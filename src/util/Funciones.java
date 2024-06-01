@@ -70,7 +70,10 @@ public class Funciones {
 		return i + 1;
 	}
 
-	public static void ejecutarAlgoritmoConcurrente(Thread[] hilos, int cantidadHilos, int tamArr) {
+	public static void ejecutarAlgoritmoConcurrente(int cantidadHilos, int tamArr) {
+		
+		Thread[] hilos = new Thread[cantidadHilos];
+		
 		//EL inicio arranca en 0
 		long inicio = 0;
 		//El fin arranca desde la division entre el tamanio del array y la cantidad de hilos
